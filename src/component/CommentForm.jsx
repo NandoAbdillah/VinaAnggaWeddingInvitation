@@ -7,7 +7,7 @@ import { FaCopy } from "react-icons/fa";
 
 const CommentForm = () => {
   const [name, setName] = useState("");
-  const [address, setAddress] = useState("");
+  const [address, setAddress] = useState("Hadir");
   const [message, setMessage] = useState("");
   const [charLeft, setCharLeft] = useState(300);
 
