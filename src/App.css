@@ -1,0 +1,86 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Grand+Hotel&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Sacramento&display=swap');
+
+.montserrat-regular {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+.sacramento-regular {
+  font-family: "Sacramento", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+.playfair-display-bold {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+
+/* Custom Color */
+@layer base {
+  :root {
+    --maroon-600: #800000;
+  }
+}
+
+.bg-maroon-600 {
+  background-color: var(--maroon-600);
+}
+
+.bg-maroon-100 {
+  background-color: rgba(128, 0, 0, 0.1);
+}
+
+.text-maroon-600 {
+  color: var(--maroon-600);
+}
+
+/* Animation for flowers */
+@keyframes flowerAnimation {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.animated-flower {
+  animation: flowerAnimation 3s infinite;
+}
+
+
+.flipped-image {
+  transform: scaleX(-1);
+}
+
+@media (max-width: 480px) {
+  .background-crop-top {
+    margin-top: -25%;
+  }
+}
+
+@media (max-width: 769px) {
+  .background-crop-top {
+    margin-top: -10%;
+  }
+}
+
+.cloud-border {
+  width: 50%;
+}
+
+textarea, input {
+  color: #000; /* Pastikan teks terlihat */
+}
+
