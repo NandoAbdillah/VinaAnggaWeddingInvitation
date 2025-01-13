@@ -7,7 +7,7 @@ const AppRouter = () => {
   return (
     <Router>
       <Routes>
-        <Route path="/vina-angga" element={<Main />} />
+        <Route path="/" element={<Main />} />
       </Routes>
     </Router>
   );
