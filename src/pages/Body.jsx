@@ -11,6 +11,7 @@ import CommentList from "../component/CommentList";
 import QuranSection from "../component/QuranSection";
 import CloudTransition from "../component/CloudTransition";
 import EventMap from "../component/EventMap";
+import FallingFlowers from "../component/FallingFlower";
 
 export default function Body({ permission }) {
   const fadeIn = {
@@ -33,6 +34,7 @@ export default function Body({ permission }) {
     <div className="text-white relative overflow-x-hidden">
 
       {permission && <MusicPlayer permission={permission} />}
+      <FallingFlowers/>
 
       {/* Background Section 1 */}
       <motion.div

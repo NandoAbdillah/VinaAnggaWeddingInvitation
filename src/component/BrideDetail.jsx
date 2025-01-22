@@ -1,4 +1,6 @@
 import { motion } from "framer-motion"; // Perhatikan bahwa ini harus 'framer-motion'
+import { FaInstagram } from "react-icons/fa";
+FaInstagram
 
 export default function BrideDetail() {
   const fadeLeft = {
@@ -29,16 +31,59 @@ export default function BrideDetail() {
           initial="hidden"
           animate="visible"
         >
-          <p
+          <motion.p
             className="text-4xl mobile:text-4xl tablet:text-5xl laptop:text-6xl font-sacramento font-bold text-white"
             style={{ textShadow: "2px 2px 4px rgba(0, 0, 0, 0.5)" }}
+            initial={{ opacity: 0, x: -100 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 2, ease: "easeOut", delay: 0.5 }}
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
+            whileInView={{
+              scale: [1, 1.05, 1],
+              transition: {
+                duration: 1.5,
+                repeat: Infinity,
+                ease: "easeInOut",
+              },
+            }}
+
           >
             Vina Novita Sari
-          </p>
+          </motion.p>
+          
+          
+          <motion.a
+            href="https://www.instagram.com/itsmevinanov/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-rose-400 hover:text-rose-600 flex items-center gap-2 font-lobstertwo ms-5 font-bold"
+            style={{
+              textShadow: "2px 2px 4px rgba(255, 255, 255, 0.2)"
+            }}
+            initial={{ opacity: 0, x: -100 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 2, ease: "easeOut", delay: 0.5 }}
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
+            whileInView={{
+              scale: [1, 1.05, 1],
+              transition: {
+                duration: 1.5,
+                repeat: Infinity,
+                ease: "easeInOut",
+              },
+            }}
+          >
+             <FaInstagram /> <span>
+              itsmevinanov </span>
+          </motion.a>
+
 
           <p
             className="mobile:text-base laptop:text-2xl font-light mt-4 font-grandhotel"
             style={{ textShadow: "2px 2px 4px rgba(0, 0, 0, 0.5)" }}
+            
           >
             Putri Bapak H Nurhuda & Ibu Sumianah
           </p>
@@ -46,17 +91,55 @@ export default function BrideDetail() {
 
         {/* Vina */}
         <motion.div
-          className="absolute mobile:bottom-16 mobile:right-8 laptop:bottom-20 laptop:top-52 laptop:right-64 text-right"
+          className="absolute mobile:bottom-12 mobile:right-8 laptop:bottom-20 laptop:top-52 laptop:right-64 text-right "
           variants={fadeRight}
           initial="hidden"
           animate="visible"
         >
-          <p
-            className="text-4xl mobile:text-4xl laptop:text-6xl font-sacramento font-bold"
+          <motion.p
+            className="text-4xl mobile:text-4xl laptop:text-6xl font-sacramento font-bold mb-2"
             style={{ textShadow: "2px 2px 4px rgba(0, 0, 0, 0.5)" }}
+            initial={{ opacity: 0, x:   100 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 2, ease: "easeOut", delay: 0.5 }}
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
+            whileInView={{
+              scale: [1, 1.05, 1],
+              transition: {
+                duration: 1.5,
+                repeat: Infinity,
+                ease: "easeInOut",
+              },
+            }}
           >
             Angga Prawira
-          </p>
+          </motion.p>
+
+          <motion.a
+            href="https://www.instagram.com/anggaprawira99/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-rose-400 hover:text-rose-600 flex items-center gap-2 font-lobstertwo ms-5 font-bold"
+            style={{ textShadow: "2px 2px 4px rgba(0, 0, 0, 0.2)" }}
+            initial={{ opacity: 0, x: 100 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 2, ease: "easeOut", delay: 0.5 }}
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
+            whileInView={{
+              scale: [1, 1.05, 1],
+              transition: {
+                duration: 1.5,
+                repeat: Infinity,
+                ease: "easeInOut",
+              },
+            }}
+            
+          >
+             <FaInstagram /> <span>
+              anggaprawira99 </span>
+          </motion.a>
           <p
             className="mobile:text-base laptop:text-2xl font-light mt-4 font-grandhotel"
             style={{ textShadow: "2px 2px 4px rgba(0, 0, 0, 0.5)" }}
@@ -66,12 +149,25 @@ export default function BrideDetail() {
         </motion.div>
 
         {/* Connector */}
-        <p
+        <motion.p
           className="absolute inset-0 flex items-center justify-center text-3xl md:text-5xl font-bold font-sacramento"
           style={{ textShadow: "2px 2px 4px rgba(0, 0, 0, 0.5)" }}
+          initial={{ opacity: 0, x: -100 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 2, ease: "easeOut", delay: 0.5 }}
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 0.9 }}
+          whileInView={{
+            scale: [1, 1.05, 1],
+            transition: {
+              duration: 1.5,
+              repeat: Infinity,
+              ease: "easeInOut",
+            },
+          }}
         >
           &
-        </p>
+        </motion.p>
       </div>
     </motion.header>
   );
