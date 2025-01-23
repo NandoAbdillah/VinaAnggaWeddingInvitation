@@ -14,8 +14,10 @@ export default function BrideCouple() {
   };
 
   const [showAlert, setShowAlert] = useState(false);
-  const accountNumber = "3251808943";
-  const copyToClipboard = () => {
+  const vinaAccountNumber = "3251808943";
+  const anggaAccountNumber = "726201018790531";
+
+  const copyToClipboard = (accountNumber) => {
     navigator.clipboard.writeText(accountNumber);
     alert("Nomor rekening berhasil disalin!");
   };
@@ -37,10 +39,10 @@ export default function BrideCouple() {
         }}>
           <div className="bg-white w-full max-w-sm mx-auto p-4 md:p-6 rounded-lg text-center mobile:mx-10 p-10">
             <h2 className="mobile:text-3xl font-semibold mb-4 font-sacramento text-red-500">
-              Rekening BCA
+              Nomor Rekening
             </h2>
             <p className="text-sm mb-6 font-montserrat text-black">
-              an Vina Novita
+              BRI an Angga Prawira
             </p>
             <div className="flex items-center space-x-2">
               <input
@@ -48,10 +50,30 @@ export default function BrideCouple() {
                 className="font-montserrat text-sm w-full p-3 border border-rose-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-rose-500 mb-5"
                 color="#000"
                 disabled
-                value={accountNumber}
+                value={anggaAccountNumber}
               />
               <button
-                onClick={copyToClipboard}
+                onClick={()=> copyToClipboard(anggaAccountNumber)}
+                className="p-3 rounded-lg bg-rose-500 hover:bg-rose-600 focus:outline-none focus:ring-2 focus:ring-rose-500 text-white h-full "
+                style={{ marginTop: "-1.2rem" }}
+                title="Salin nomor rekening"
+              >
+                <FaCopy />
+              </button>
+            </div>
+            <p className="text-sm mb-6 font-montserrat text-black">
+              BCA an Vina Novita
+            </p>
+            <div className="flex items-center space-x-2">
+              <input
+                type="text"
+                className="font-montserrat text-sm w-full p-3 border border-rose-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-rose-500 mb-5"
+                color="#000"
+                disabled
+                value={vinaAccountNumber}
+              />
+              <button
+                onClick={()=>copyToClipboard(vinaAccountNumber)}
                 className="p-3 rounded-lg bg-rose-500 hover:bg-rose-600 focus:outline-none focus:ring-2 focus:ring-rose-500 text-white h-full "
                 style={{ marginTop: "-1.2rem" }}
                 title="Salin nomor rekening"

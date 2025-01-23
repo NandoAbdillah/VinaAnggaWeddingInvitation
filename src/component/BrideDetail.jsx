@@ -57,7 +57,7 @@ export default function BrideDetail() {
             href="https://www.instagram.com/itsmevinanov/"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-rose-400 hover:text-rose-600 flex items-center gap-2 font-lobstertwo ms-5 font-bold"
+            className="text-rose-400 hover:text-rose-600 flex items-center gap-2 font-lobstertwo ms-5 font-bold cursor-pointer"
             style={{
               textShadow: "2px 2px 4px rgba(255, 255, 255, 0.2)"
             }}
@@ -117,7 +117,7 @@ export default function BrideDetail() {
           </motion.p>
 
           <motion.a
-            href="https://www.instagram.com/anggaprawira99/"
+            href="https://www.instagram.com/anggawirrr/"
             target="_blank"
             rel="noopener noreferrer"
             className="text-rose-400 hover:text-rose-600 flex items-center gap-2 font-lobstertwo ms-5 font-bold"
@@ -138,7 +138,7 @@ export default function BrideDetail() {
             
           >
              <FaInstagram /> <span>
-              anggaprawira99 </span>
+             anggawirrr </span>
           </motion.a>
           <p
             className="mobile:text-base laptop:text-2xl font-light mt-4 font-grandhotel"

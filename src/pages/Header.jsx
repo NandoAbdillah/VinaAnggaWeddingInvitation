@@ -13,7 +13,8 @@ export default function Header() {
   };
 
   const params = new URLSearchParams(window.location.search);
-  const namaPenerima = params.get("to") || "Tamu Undangan";
+  const nama = params.get("to") || "Tamu Undangan";
+  const namaPenerima = nama.replaceAll("_", " ");
 
   useEffect(() => {
     // Simulasi waktu loading
