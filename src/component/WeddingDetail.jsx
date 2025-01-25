@@ -102,7 +102,7 @@ export default function WeddingDetail() {
               Akad Nikah
             </h2>
             <p className="text-xs md:text-sm text-center font-playfair">
-              Sabtu, 15 Februari 2024
+              Sabtu, 15 Februari 2025
             </p>
             <p className="text-xs md:text-sm text-center font-playfair">
               08:00 – 10:00 WIB
@@ -123,7 +123,7 @@ export default function WeddingDetail() {
             Resepsi
           </h2>
           <p className="text-xs md:text-sm text-center font-playfair">
-            Sabtu, 15 Februari 2024
+            Sabtu, 15 Februari 2025
           </p>
           <p className="text-xs md:text-sm text-center font-playfair">
             15:00 – 21:00 WIB
