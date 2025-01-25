@@ -25,7 +25,7 @@ export default function CoupleStory() {
           <div className="text-center sm:text-left">
             <h3 className="text-xl font-semibold text-gray-800 sm:text-2xl font-lobstertwo">2019</h3>
             <p className="text-gray-600 mt-2 sm:mt-4 text-sm sm:text-base font-lobstertwo">
-              Kami pertama kali bertemu di Pondok Ubaidah, Kertosono pada saat Tes 2. Saat itu, 
+              Pada Bulan September kami pertama kali bertemu di Pondok Ubaidah, Kertosono pada saat Tes 2. Saat itu, 
               kami dikenalkan melalui kerabat dan mulai saling mengenal, 
               memahami satu sama lain, serta mendapatkan restu dari orang tua.
             </p>
